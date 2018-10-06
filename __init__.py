@@ -5,6 +5,9 @@ import bot.bot
 from logging import handlers
 from discord.ext import commands
 
+if not os.path.exists("logs"):
+    os.mkdir("logs")
+
 logging_handlers = [logging.StreamHandler(stream=sys.stderr),
                     handlers.TimedRotatingFileHandler("logs/log.txt", when="s", interval=5, utc=True)]
 
