@@ -23,7 +23,6 @@ class Hacktoberbot(commands.Bot):
     def startup(self):
         logging.info("Connecting")
         self.run(self.HACKTOBERBOT_TOKEN)
-        logging.info("Started up")
 
     def __init__(self, command_prefix, formatter=None, description=None, pm_help=False, **options):
         logging.info("Initialising")
