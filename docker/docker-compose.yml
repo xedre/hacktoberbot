@@ -1,0 +1,11 @@
+version: "3"
+services:
+  dumbo:
+    image: pythondiscord/seasonalbot:latest
+    container_name: seasonalbot
+
+    restart: always
+
+    environment:
+      - SEASONALBOT_TOKEN
+
